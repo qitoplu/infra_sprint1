@@ -5,8 +5,7 @@ __pycache__/
 
 # C extensions
 *.so
-static_backend/
-node_modules/
+
 # Distribution / packaging
 .Python
 build/
@@ -138,7 +137,9 @@ media/
 # FRONTEND
 
 # dependencies
-/node_modules
+/frontend/node_modules
+/backend/backend_static
+/backend/static_backend
 /.pnp
 .pnp.js
 
