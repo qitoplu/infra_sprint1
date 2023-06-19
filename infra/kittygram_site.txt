@@ -1,0 +1,5 @@
+IP: 158.160.12.141;
+name_taski: https://qitoplutaski.ddns.net;
+name_kittygram: https://infrasprintdomain.hopto.org;
+login: yc-user;
+password: vanilla123;
