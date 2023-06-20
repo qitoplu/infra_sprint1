@@ -1,17 +1,18 @@
 import os
-from os import getenv
+
 from pathlib import Path
-from dotenv import load_dotenv, find_dotenv
+
+from dotenv import find_dotenv, load_dotenv
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 load_dotenv(find_dotenv())
 
-SECRET_KEY = getenv('SECRET_KEY')
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['158.160.12.141', '127.0.0.1', 'localhost', 'infrasprintdomain.hopto.org']
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS').split(', ')
 
 INSTALLED_APPS = [
     'django.contrib.admin',
